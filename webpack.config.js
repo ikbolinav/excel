@@ -1,11 +1,15 @@
-const patj = require('path')
-const { pathToFileURL } = require('url')
+const path = require('path')
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+
 module.exports = {
-    context: path.resolve(__dirname, 'src'),
-    mode: 'development',
-    entry: './index.js',
-    output:{
-        filename: 'bundle.js',
-        path: path.resolve(__dirname, 'dist')
-    }
+  context: path.resolve(__dirname, 'src'),
+  mode: 'development',
+  entry: './index.js',
+  output: {
+    filename: 'bundle.[has].js',
+    path: path.resolve(__dirname, 'dist')
+  },
+  plugins:[
+    new CleanWebpackPlugin()
+  ]
 }
