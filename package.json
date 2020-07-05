@@ -1,0 +1,31 @@
+{
+  "name": "excel",
+  "version": "1.0.0",
+  "description": "Pure JavaScrip excel app",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack",
+    "build": "webpack --mode production" 
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ikbolinav/excel.git"
+  },
+  "keywords": [
+    "js",
+    "jsvascript",
+    "excel"
+  ],
+  "author": "Ikbol Navruzshoev <ikbolinav@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ikbolinav/excel/issues"
+  },
+  "homepage": "https://github.com/ikbolinav/excel#readme",
+  "private": true,
+  "devDependencies": {
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12"
+  }
+}
